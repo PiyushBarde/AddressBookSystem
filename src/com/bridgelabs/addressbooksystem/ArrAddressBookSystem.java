@@ -13,7 +13,7 @@ public class ArrAddressBookSystem {
             /*----------------Strings----------------------*/
             System.out.println("Enter first name = ");
             String subFirstName = sc.next();
-            System.out.println("Enter last name = ");
+            System.out.println("Enter Last name = ");
             String subLastName = sc.next();
             System.out.println("Enter Address = ");
             String subAddress = sc.next();
