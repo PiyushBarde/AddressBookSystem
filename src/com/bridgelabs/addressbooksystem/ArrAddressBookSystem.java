@@ -33,7 +33,8 @@ public class ArrAddressBookSystem {
             //-------------------------------//
             System.out.println("to add another contact = press 1 ");
             System.out.println("to edit existing contact = press 2");
-            System.out.println("to exit Addressbook = press 3");
+            System.out.println("To delete existing contact = press 3");
+            System.out.println("to exit Addressbook = press 4");
             int continueAns = sc.nextInt();
             if (continueAns == 1) {
                 counter++;
@@ -41,6 +42,9 @@ public class ArrAddressBookSystem {
             }
             else if(continueAns == 2){
                 ArrContactEditor.contactEditor();
+            }
+            else if(continueAns == 3){
+                ArrContactDelete.arrContactDelete();
             }
             else{
                 ans = false;
