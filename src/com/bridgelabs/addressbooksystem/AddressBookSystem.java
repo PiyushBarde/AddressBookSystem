@@ -1,41 +1,19 @@
-package com.bridgelabs.addressbooksystem;
-import java.util.Scanner;
 public class AddressBookSystem {
-    static class AddressBook {
-          String firstName, lastName, address, city, state;
-          int zipCode;
-          long phoneNumber;
+     String firstName, lastName,address,city,state,email;
+      int zipCode;
+      long phoneNumber;
+      public static int counter = 0;
+            public AddressBookSystem(String firstName,String lastName,String address,String city,
+                                     String state,String email, int zipCode,long phoneNumber)
+            {
+                this.firstName= firstName;
+                this.lastName= lastName;
+                this.address=address;
+                this.city=city;
+                this.state=state;
+                this.email=email;
+                this.zipCode=zipCode;
+                this.phoneNumber=phoneNumber;
 
-             AddressBook() {
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Enter first Name = ");
-            firstName = sc.nextLine();
-            System.out.println("Enter Last Name = ");
-            lastName = sc.nextLine();
-            System.out.println("Enter address = ");
-            address = sc.nextLine();
-            System.out.println("vEnter city = ");
-            city = sc.nextLine();
-            System.out.println("Enter state = ");
-            state = sc.nextLine();
-            System.out.println("Enter zipCode = ");
-            zipCode = sc.nextInt();
-            System.out.println("Enter phoneNumber = ");
-            phoneNumber = sc.nextLong();
-        }
-    }
-    
-    public static void main(String[] args) {
-    	Scanner sc = new Scanner(System.in);
-    	AddressBook person1 = new AddressBook();
-    	System.out.println("Do u want to enter new contact(Y-yes/N-no)");
-    	String ans = sc.nextLine();
-    	if(ans.equals("Y"))
-    	{
-    		AddressBook person2 = new AddressBook();
-    	}
-    	else {
-    		System.out.println("----Thank you----");
-    	}
-    }
-}
+            }
+   }
